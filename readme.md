@@ -2,7 +2,7 @@
 
 <!-- - Youtube Cercube 5.1.1 (Заменяет) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">Download</a> -->
 
-- Youtube Cercube 5.1.1 (Отдельный) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube2/Info.plist">Download</a>
+- Youtube Cercube 5.1.1 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">Download</a>
 
 - Instagram + Rocket 118 / 3.6.5 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/igrocket/Info.plist">Download</a>
 
