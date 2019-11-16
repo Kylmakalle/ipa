@@ -9,8 +9,10 @@
 
 - VK 5.27 / VK++ 0.30b / ColoredVK | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/vk/Info.plist">Download</a>
 
-- WhatsApp 2.19.112 / Watusi 1.2.7 |  <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/wa/Info.plist">Download</a>
+- WhatsApp 2.19.112 / Watusi 1.2.7 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/wa/Info.plist">Download</a>
 
-- H3lix RC6 |  <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/h3lix/Info.plist">Download</a>
+- H3lix RC6 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/h3lix/Info.plist">Download</a>
 
-- Mobigram 4.9.2 |  <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/mobigram/Info.plist">Download</a>
+- Mobigram 4.9.2 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/mobigram/Info.plist">Download</a>
+
+- Charles (v1.3.1 v110) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/charles/Info.plist">Charles</a>
