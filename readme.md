@@ -16,3 +16,6 @@
 - Mobigram 4.9.2 | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/mobigram/Info.plist">Download</a>
 
 - Charles (v1.3.1 v110) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/charles/Info.plist">Download</a>
+
+
+- itorrent (v1.7.3) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">Download</a>
