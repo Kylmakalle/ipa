@@ -4,6 +4,8 @@ This repo contains some scripts and files that can help running your own ipa dow
 
 ## Usage
 
+0. Setup github pages for your repo with `master` branch.
+
 1. Manage to install all the dependences and **fastlane** from gemfile. You might google or check [fastlane docs](/fastlane)
 
 2. Prepeare your signing certificate on https://developer.apple.com. Include your (or your friends') device [UUID](https://www.google.com/search?q=how+to+find+uuid+ios) in your signing certificate. You can do it via website or fastlane [register_device](https://docs.fastlane.tools/actions/register_device/)
