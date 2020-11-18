@@ -175,7 +175,7 @@ end
 
 desc "Commit updated dirs"
 lane :commit_update do
-  sh "cd .. && git add apps/* readme.md && git commit -m 'Update apps'"
+  sh "cd .. && git add apps/* readme.md && git commit -m 'Update apps' && git push origin master"
 end
 
 desc "Run update of ipas and readme"
