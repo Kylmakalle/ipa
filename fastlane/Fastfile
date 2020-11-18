@@ -130,7 +130,7 @@ lane :create_readme do |options|
   readme = "# Signed IPAs\n\n"
 
   apps.each do |app|
-    app_text = "- #{app['app_name']} #{app['version']} (#{app['build']})"
+    app_text = "- **#{app['app_name']}** #{app['version']} (#{app['build']})"
 
     # Additional title from data.json
     unless app["title"].nil?
