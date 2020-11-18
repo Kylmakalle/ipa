@@ -164,13 +164,18 @@ lane :create_readme do |options|
 
   readme += "__Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__"
 
-  File.write("../Readme.md", readme)
+  File.write("../readme.md", readme)
 end
 
 desc "Run full update of mobileprovision, ipas and readme"
 lane :full_update do
   gen_provision()
   run_update()
+end
+
+desc "Commit updated dirs"
+lane :commit_update do
+  sh "cd .. && git add apps/* readme.md && git commit -m 'Update apps'"
 end
 
 desc "Run update of ipas and readme"
@@ -180,5 +185,10 @@ lane :update do
   resign_ipas(apps: apps)
   create_plists(apps: apps)
   create_readme(apps: apps)
+  begin
+    commit_update()
+  rescue => ex
+    UI.error("Error commiting update. Probably nothing to commit 🤔")
+  end 
 end
 

@@ -55,6 +55,11 @@ Generate readme based on ipas available
 fastlane full_update
 ```
 Run full update of mobileprovision, ipas and readme
+### commit_update
+```
+fastlane commit_update
+```
+Commit updated dirs
 ### update
 ```
 fastlane update
