@@ -1,9 +1,9 @@
 # Signed IPAs
 
-- YouTube 15.22.4 | Cercube 5.1.18 | Ru | NoAds (Замена оригинального) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">Download</a>
+- iTorrent 1.8.1 (18.0) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">Download</a>
 
-- VK 2.10 | VKCache | ColoredVK | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/vk/Info.plist">Download</a>
+- iChan 1.20.11130004 (1304) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">Download</a>
 
-Для работы аудиозаписей измените ID клиента на Kate Mobile 2685278.
+https://t.me/ichan_ios
 
-- iTorrent (v1.8) | <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">Download</a>
+__Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__

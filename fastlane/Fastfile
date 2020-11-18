@@ -1,0 +1,173 @@
+require "json"
+require "fileutils"
+require "tmpdir"
+
+desc "Generate fresh mobileprovision"
+lane :gen_provision do
+  sigh(adhoc: true, force: true, username: ENV["APPSTORE_USERNAME"], provisioning_name: "Wildcard", app_identifier: "*", filename: "Wildcard.mobileprovision", output_path: "generator/")
+end
+
+desc "Get ipa version, build, bundle id and name"
+lane :get_ipa_info do |options|
+  version = get_ipa_info_plist_value(key: "CFBundleShortVersionString", ipa: options[:ipa_path])
+  build = get_ipa_info_plist_value(key: "CFBundleVersion", ipa: options[:ipa_path])
+  bundle_id = get_ipa_info_plist_value(key: "CFBundleIdentifier", ipa: options[:ipa_path])
+  app_name = get_ipa_info_plist_value(key: "CFBundleName", ipa: options[:ipa_path])
+
+  result_dict = {"version" => version, "build" => build, "bundle_id" => bundle_id, "app_name" => app_name}
+end
+
+desc "Scan all the ipas in `ipas` folder"
+lane :iterate_over_ipas do
+  apps = []
+  Dir.glob("#{File.expand_path("..", Dir.pwd)}/ipas/*").each do |path|
+    next unless File.directory?(path) # skip the loop if the file is not a directory
+
+    app_tag = File.basename(path) # got app tag
+    ipa = Dir.glob("#{path}/*.ipa")[0] # scaning for ipa file
+
+    ipa_info = get_ipa_info(ipa_path: ipa) # get ipa file info
+    ipa_info["tag"] = app_tag
+    ipa_info["path"] = ipa
+
+    datafile = Dir.glob("#{path}/data.json")
+    unless datafile.empty?
+      file = File.open datafile[0]
+      data = JSON.load file
+
+      ipa_info = ipa_info.merge(data)
+
+      file.close
+    end
+
+    apps.append(ipa_info)
+  end
+  # return array
+  apps
+end
+
+desc "Creates plist files for ad hoc download"
+lane :create_plists do |options|
+  apps = options[:apps]
+  template_file = File.open "../plist_template.txt"
+  template = template_file.read
+  template_file.close
+  apps.each do |app|
+    plist_data = template.dup
+
+    # Replacing template variables
+    plist_data.sub! "{ipa_url}", "#{ENV['GIT_URI']}/#{ENV['REPO']}/releases/download/#{app["tag"]}/app.ipa"
+    plist_data.sub! "{bundle_identifier}", app["bundle_id"]
+    plist_data.sub! "{title}", app["app_name"]
+
+    plist_path = "../apps/#{app["tag"]}"
+
+    # Create dirs if they're empty
+    FileUtils.mkdir_p plist_path
+    # Writing
+    File.write("#{plist_path}/Info.plist", plist_data)
+  end
+end
+
+desc "Resign ipas with mobileprovision"
+lane :resign_ipas do |options|
+  apps = options[:apps]
+  apps.each do |app|
+    Dir.mktmpdir do |dir|
+      # Copy ipa to temp dir
+      FileUtils.cp(app["path"], dir)
+      copied_file = "#{dir}/#{File.basename(app['path'])}"
+
+      # Renaming to app.ipa
+      temp_path = "#{dir}/app.ipa"
+      File.rename(copied_file, temp_path)
+
+      resign(
+        ipa: temp_path,
+        signing_identity: ENV["SIGNING_CERT"],
+        provisioning_profile: "generated/Wildcard.mobileprovision"
+      )
+
+      app["temp_path"] = temp_path
+      upload_ipa(app: app)
+    end
+
+  end
+end
+
+desc "Upload ipa to github release section"
+lane :upload_ipa do |options|
+  app = options[:app]
+
+  existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
+
+  unless existing_release.nil? 
+    # Delete existing release on GH
+    response = github_api(
+      server_url: "https://api.github.com",
+      api_token: ENV["GITHUB_TOKEN"],
+      http_method: "DELETE",
+      path: "/repos/#{ENV['REPO']}/git/refs/tags/#{app['tag']}"
+    )
+    # Give GH some time to handle this
+    sleep 3
+  end
+
+  github_release = set_github_release(
+    repository_name: ENV["REPO"],
+    api_token: ENV["GITHUB_TOKEN"],
+    tag_name: app["tag"],
+    name: app["app_name"],
+    description: "#{app['app_name']} #{app['version']} (#{app['build']})\n#{app['bundle_id']}",
+    commitish: "master",
+    upload_assets: [app["temp_path"]]
+  )
+end
+
+desc "Generate readme based on ipas available"
+lane :create_readme do |options|
+  apps = options[:apps]
+  readme = "# Signed IPAs\n\n"
+
+  apps.each do |app|
+    app_text = "- #{app['app_name']} #{app['version']} (#{app['build']})"
+
+    # Additional title from data.json
+    unless app["title"].nil?
+      app_text += " | " + app["title"]
+    end
+
+    # Download via plist
+    app_text += " <a href=\"itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/#{ENV['REPO']}/master/apps/#{app['tag']}/Info.plist\">Download</a>"
+
+    app_text += "\n\n"
+
+    # Additioanl comment from data.json
+    unless app["comment"].nil?
+      app_text += app["comment"] + "\n\n"
+    end
+
+
+    readme += app_text
+  end
+
+  readme += "__Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__"
+
+  File.write("../Readme.md", readme)
+end
+
+desc "Run full update of mobileprovision, ipas and readme"
+lane :full_update do
+  gen_provision()
+  run_update()
+end
+
+desc "Run update of ipas and readme"
+lane :update do
+  apps = iterate_over_ipas
+  puts apps
+  resign_ipas(apps: apps)
+  create_plists(apps: apps)
+  create_readme(apps: apps)
+end
+
