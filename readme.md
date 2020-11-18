@@ -6,4 +6,6 @@
 
 https://t.me/ichan_ios
 
+- unc0ver 5.3.1 (1) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uncover/Info.plist">Download</a>
+
 __Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__
