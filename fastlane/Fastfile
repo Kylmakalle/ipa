@@ -85,7 +85,7 @@ lane :resign_ipas do |options|
       resign(
         ipa: temp_path,
         signing_identity: ENV["SIGNING_CERT"],
-        provisioning_profile: "generated/Wildcard.mobileprovision"
+        provisioning_profile: "generator/Wildcard.mobileprovision"
       )
 
       app["temp_path"] = temp_path
