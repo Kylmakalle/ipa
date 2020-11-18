@@ -1,6 +1,6 @@
 # Signed IPAs
 
-- **YouTube** 15.42.2 (15.42.2) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
+- **YouTube** 13.11.6 (13.11.6) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно
 
