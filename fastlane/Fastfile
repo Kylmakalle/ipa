@@ -52,7 +52,7 @@ lane :create_plists do |options|
   if apps.nil?
     apps = iterate_over_ipas
   end
-  
+
   template_file = File.open "../plist_template.txt"
   template = template_file.read
   template_file.close
@@ -106,9 +106,6 @@ end
 desc "Upload ipa to github release section"
 lane :upload_ipa do |options|
   app = options[:app]
-  if apps.nil?
-    apps = iterate_over_ipas
-  end
 
   existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
 
