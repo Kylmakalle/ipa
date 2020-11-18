@@ -15,7 +15,7 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>ipaApps.Store.YouTubeOldPls</string>
+<string>com.google.ios.youtube</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
