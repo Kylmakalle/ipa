@@ -1,5 +1,7 @@
 # Signed IPAs
 
+- **Chan** 0.6 (1549820532) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/channy/Info.plist">Download</a>
+
 - **YouTube** 15.43.4 (15.43.4) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно
@@ -9,6 +11,8 @@
 - **iChan** 1.20.11192125 (1318) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">Download</a>
 
 https://t.me/ichan_ios
+
+- **TheChan** 1.7.2 (0) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/thechan/Info.plist">Download</a>
 
 - **unc0ver** 5.3.1 (1) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uncover/Info.plist">Download</a>
 
