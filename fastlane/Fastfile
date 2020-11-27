@@ -170,7 +170,7 @@ end
 desc "Run full update of mobileprovision, ipas and readme"
 lane :full_update do
   gen_provision()
-  run_update()
+  update()
 end
 
 desc "Commit updated dirs"
