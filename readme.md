@@ -2,7 +2,7 @@
 
 - **Chan** 0.6 (1549820532) | (Channy) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/channy/Info.plist">Download</a>
 
-- **YouTube** 15.49.4 (15.49.4) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
+- **YouTube** 15.43.4 (15.43.4) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно
 
