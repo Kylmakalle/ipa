@@ -1,6 +1,7 @@
 require "json"
 require "fileutils"
 require "tmpdir"
+require "digest"
 
 desc "Generate fresh mobileprovision"
 lane :gen_provision do
@@ -97,6 +98,14 @@ lane :resign_ipas do |options|
       )
 
       app["temp_path"] = temp_path
+
+      app["original_ipa_md5"] = Digest::MD5.hexdigest File.read app["path"]
+      app["provision_md5"] = Digest::MD5.hexdigest File.read "../generator/Wildcard.mobileprovision"
+      
+
+      puts app["provision_md5"]
+      puts app["original_ipa_md5"]
+      
       upload_ipa(app: app)
     end
 
@@ -110,6 +119,30 @@ lane :upload_ipa do |options|
   existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
 
   unless existing_release.nil? 
+    ipa_md5_regexp = /Original .ipa MD5 ([a-f0-9]{32})/
+    provision_md5_regexp = /Provision MD5 ([a-f0-9]{32})/
+
+    ipa_match_groups = ipa_md5_regexp.match(existing_release['body'])
+    provision_match_groups = provision_md5_regexp.match(existing_release['body'])
+    
+    provision_md5_matches = false
+
+    # Check for md5 updates so we don't waste time
+    if !provision_match_groups.nil?
+      if app['provision_md5'] == provision_match_groups[1]
+        provision_md5_matches = true
+      else
+        UI.important "App '#{app['app_name']}' has new provisioning profile, reuploading..."
+      end       
+    end
+
+    if provision_md5_matches && !ipa_match_groups.nil?
+      if app['original_ipa_md5'] == ipa_match_groups[1]
+        UI.success "App '#{app['app_name']}' already exists with same md5"
+        next
+      end
+    end
+
     # Delete existing release on GH
     response = github_api(
       server_url: "https://api.github.com",
@@ -126,7 +159,7 @@ lane :upload_ipa do |options|
     api_token: ENV["GITHUB_TOKEN"],
     tag_name: app["tag"],
     name: app["app_name"],
-    description: "#{app['app_name']} #{app['version']} (#{app['build']})\n#{app['bundle_id']}",
+    description: "#{app['app_name']} #{app['version']} (#{app['build']})\n#{app['bundle_id']}\nOriginal .ipa MD5 #{app['original_ipa_md5']}\nProvision MD5 #{app['provision_md5']}",
     commitish: "master",
     upload_assets: [app["temp_path"]]
   )
