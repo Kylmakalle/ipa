@@ -103,8 +103,8 @@ lane :resign_ipas do |options|
       app["provision_md5"] = Digest::MD5.hexdigest File.read "../generator/Wildcard.mobileprovision"
       
 
-      puts app["provision_md5"]
-      puts app["original_ipa_md5"]
+      puts "Provision MD5 #{app['provision_md5']}"
+      puts "Original .ipa MD5 #{app['original_ipa_md5']}"
       
       upload_ipa(app: app)
     end
