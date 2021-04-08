@@ -4,3 +4,4 @@ fastlane/report.xml
 .env
 generator/
 ipas/
+_floatsignTemp/
