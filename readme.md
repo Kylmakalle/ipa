@@ -2,7 +2,7 @@
 
 - **Chan** 0.6 (1549820532) | (Channy) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/channy/Info.plist">Download</a>
 
-- **YouTube** 15.43.4 (15.43.4) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
+- **YouTube** 16.09.3 (16.09.3) | Cercube <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно
 
@@ -11,6 +11,8 @@
 - **iChan** 1.21.1212259 (1448) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">Download</a>
 
 https://t.me/ichan_ios
+
+- **BeaconIL** 1.2 (6) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/beacon-test/Info.plist">Download</a>
 
 - **TheChan** 1.7.2 (0) | (TheChan) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/thechan/Info.plist">Download</a>
 

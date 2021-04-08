@@ -16,12 +16,10 @@
 <dict>
 <key>bundle-identifier</key>
 <string>ru.Vitaliy.Gribko.BeaconIL</string>
-<key>bundle-version</key>
-<string>1.2</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Beacon Indoor Location</string>
+<string>BeaconIL</string>
 </dict>
 </dict>
 </array>
