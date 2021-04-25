@@ -90,12 +90,13 @@ lane :resign_ipas do |options|
       # Renaming to app.ipa
       temp_path = "#{dir}/app.ipa"
       File.rename(copied_file, temp_path)
-
-      resign(
-        ipa: temp_path,
-        signing_identity: ENV["SIGNING_CERT"],
-        provisioning_profile: "generator/Wildcard.mobileprovision"
-      )
+      
+      sh("cd .. && ./resign.sh \"#{temp_path}\" \"#{ENV['SIGNING_CERT']}\" \"#{ENV['PROVISION_PROFILE'] || 'generator/Wildcard.mobileprovision'}\" \"#{temp_path}\" \"null.null\" ")
+      # resign(
+      #   ipa: temp_path,
+      #   signing_identity: ENV["SIGNING_CERT"],
+      #   provisioning_profile: "generator/Wildcard.mobileprovision"
+      # )
 
       app["temp_path"] = temp_path
 

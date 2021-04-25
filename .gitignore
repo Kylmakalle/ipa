@@ -5,3 +5,4 @@ fastlane/report.xml
 generator/
 ipas/
 _floatsignTemp/
+extracted/
