@@ -1,8 +1,6 @@
 # Signed IPAs
 
-- **Chan** 0.6 (1549820532) | (Channy) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/channy/Info.plist">📲 Download</a>
-
-- **YouTube** 16.46.5 (16.46.5) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
+- **YouTube** 17.05.2 (17.05.2) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно и можно сделать через временную почту
 
@@ -12,12 +10,10 @@
 
 https://t.me/ichan_ios
 
-- **TheChan** 1.7.2 (0) | (TheChan) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/thechan/Info.plist">📲 Download</a>
-
 - **unc0ver** 5.3.1 (1) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uncover/Info.plist">📲 Download</a>
 
 - **Swiftchan** 0.8.10 (1) | Kochan <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
 
-- **LinkedIn** 2021.0127.2208 (9.17.1425.2) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linkedin/Info.plist">📲 Download</a>
+- **LinkedIn** 2022.0303.1125 (9.22.5441) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linkedin/Info.plist">📲 Download</a>
 
 __Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__
