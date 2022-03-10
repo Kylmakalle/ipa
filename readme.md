@@ -6,7 +6,7 @@
 
 - **iTorrent** 1.8.1 (18.0) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📲 Download</a>
 
-- **iChan** 1.21.11291953 (2202) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
+- **iChan** 2.10.2270147 (5003) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
 
 https://t.me/ichan_ios
 
