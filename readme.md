@@ -14,6 +14,10 @@
 
 https://t.me/ichan_ios
 
+- **SberbankApp** 12.15.0 (245) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sberbank-old/Info.plist">📲 Download</a>
+
+Старая версия. Установка на свой страх и риск!
+
 - **unc0ver** 5.3.1 (1) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uncover/Info.plist">📲 Download</a>
 
 - **Swiftchan** 0.8.10 (1) | Kochan <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
