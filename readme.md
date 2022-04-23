@@ -8,7 +8,7 @@
 
 - **Shadowrocket** 2.2.0 (1540) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/shadowrocket/Info.plist">📲 Download</a>
 
-- **Spotify** 8.6.94 (869400351) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/spotify/Info.plist">📲 Download</a>
+- **Spotify** 8.6.42 (864200835) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/spotify/Info.plist">📲 Download</a>
 
 - **iChan** 2.10.4182319 (5038) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
 
