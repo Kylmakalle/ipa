@@ -14,6 +14,10 @@ https://t.me/ichan_ios
 
 Старая версия. Установка на свой страх и риск!
 
+- **InvestApp** 7.4.0 (670) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sber-investor/Info.plist">📲 Download</a>
+
+Установка на свой страх и риск!
+
 - **unc0ver** 5.3.1 (1) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uncover/Info.plist">📲 Download</a>
 
 - **Swiftchan** 0.8.10 (1) | Kochan <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
