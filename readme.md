@@ -14,6 +14,8 @@
 
 https://t.me/ichan_ios
 
+- **Procreate** 5.2.6 (43168) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📲 Download</a>
+
 - **SberbankApp** 10.13.0 (173) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sberbank-old/Info.plist">📲 Download</a>
 
 Старая версия. Установка на свой страх и риск!
