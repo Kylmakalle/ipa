@@ -28,6 +28,8 @@ https://t.me/ichan_ios
 
 - **Swiftchan** 0.8.10 (1) | Kochan <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
 
-- **LinkedIn** 2022.0303.1125 (9.22.5441) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linkedin/Info.plist">📲 Download</a>
+- **LinkedIn** 2022.0505.1050 (9.22.7624) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linkedin/Info.plist">📲 Download</a>
+
+- **Rebirth iOS** 1.1 (501) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tbi/Info.plist">📲 Download</a>
 
 __Please, refer to [/readme-dev.md](/readme-dev.md) for instructions__
