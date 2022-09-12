@@ -1,6 +1,6 @@
 # Signed IPAs
 
-- **YouTube** 17.33.2 (17.33.2) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
+- **YouTube** 17.35.3 (17.35.3) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно и можно сделать через временную почту
 
@@ -10,7 +10,11 @@
 
 - **Spotify** 8.6.42 (864200835) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/spotify/Info.plist">📲 Download</a>
 
-- **iChan** 3.0.8271306 (5143) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
+- **YouTube** 17.35.3 (17.35.3) | uYouPlus | iSponsorBlock <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/uYou/Info.plist">📲 Download</a>
+
+мод на Youtube
+
+- **iChan** 3.3.9101244 (5161) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
 
 https://t.me/ichan_ios
 
