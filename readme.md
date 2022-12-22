@@ -1,6 +1,6 @@
 # Signed IPAs
 
-- **YouTube** 17.35.3 (17.35.3) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
+- **YouTube** 17.46.4 (17.46.4) | Cercube 5.3.3 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/cercube/Info.plist">📲 Download</a>
 
 нужно создать аккаунт Cercube и войти в него, это бесплатно и можно сделать через временную почту
 
@@ -14,11 +14,13 @@
 
 мод на Youtube
 
-- **iChan** 3.3.9101244 (5161) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
+- **iChan** 3.3.11191300 (5206) | 2ch клиент <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
 
 https://t.me/ichan_ios
 
 - **Procreate** 5.2.6 (43168) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📲 Download</a>
+
+- **Investor** 2.0.1 (12) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/invstr/Info.plist">📲 Download</a>
 
 - **SberbankApp** 10.13.0 (173) <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sberbank-old/Info.plist">📲 Download</a>
 
