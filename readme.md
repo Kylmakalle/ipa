@@ -1,5 +1,39 @@
 # Signed IPAs
 
+### vpn
+
+> v1.9.17 (221034)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/vpn-super/Info.plist">📥 Download</a>
+
+### iTorrent
+
+> v1.9 (24.0)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📥 Download</a>
+
+### Shadowrocket
+
+> v2.2.8 (1660)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/shadowrocket/Info.plist">📥 Download</a>
+
+### smpro
+
+> v5.3 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/smpro/Info.plist">📥 Download</a>
+
+<details><summary>Description</summary>
+Создание скриншотов с использованием мокапов
+</details>
+
+### VPNProxyMaster
+
+> v1.4.4 (1.4.4.1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/vpn360/Info.plist">📥 Download</a>
+
 ### iChan
 
 > v3.16.12151402 (5337)
