@@ -98,7 +98,7 @@ lane :resign_ipas do |options|
         ipa: temp_path,
         signing_identity: ENV["SIGNING_CERT"],
         provisioning_profile: "generator/Wildcard.mobileprovision",
-        use_app_entitlements: true
+        # use_app_entitlements: true
       )
 
       app["temp_path"] = temp_path
@@ -185,9 +185,8 @@ lane :create_readme do |options|
       app_text += " | " + app["title"]
     end
 
-    app_text += "\n\n"
     # Download via plist
-    app_text += "<a href=\"itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/#{ENV['REPO']}/master/apps/#{app['tag']}/Info.plist\">📲 Download</a>"
+    app_text += " | <a href=\"itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/#{ENV['REPO']}/master/apps/#{app['tag']}/Info.plist\">📥 Download</a>"
     app_text += "\n\n"
     # Version and build
     app_text += "> v#{app['version']} (#{app['build']})"
