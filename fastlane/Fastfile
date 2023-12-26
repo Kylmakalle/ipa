@@ -185,11 +185,12 @@ lane :create_readme do |options|
       app_text += " | " + app["title"]
     end
 
-    # Download via plist
-    app_text += " | <a href=\"itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/#{ENV['REPO']}/master/apps/#{app['tag']}/Info.plist\">📥 Download</a>"
     app_text += "\n\n"
     # Version and build
     app_text += "> v#{app['version']} (#{app['build']})"
+    # Download via plist
+    app_text += "\n\n"
+    app_text += "<a href=\"itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/#{ENV['REPO']}/master/apps/#{app['tag']}/Info.plist\">📥 Download</a>"
     
     app_text += "\n\n"
 
