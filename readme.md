@@ -1,8 +1,6 @@
 # Signed IPAs
 
-### iChan
-
-<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
+### iChan- <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📲 Download</a>
 
 > v3.16.12151402 (5337)
 
@@ -10,9 +8,7 @@
 https://t.me/ichan_ios
 </details>
 
-### YouTube
-
-<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📲 Download</a>
+### YouTube- <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📲 Download</a>
 
 > v18.46.3 (18.46.3)
 
@@ -35,15 +31,11 @@ uYou 3.0.1 | iSBlock | YTPlus
 ▎Много много другого
 </details>
 
-### Procreate
-
-<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📲 Download</a>
+### Procreate- <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📲 Download</a>
 
 > v5.3.3 (50371)
 
-### Swiftchan | Kochan
-
-<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
+### Swiftchan | Kochan- <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kochan/Info.plist">📲 Download</a>
 
 > v0.8.10 (1)
 
