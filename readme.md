@@ -75,6 +75,12 @@ uYou 3.0.1 | iSBlock | YTPlus
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📥 Download</a>
 
+### PDFExpert
+
+> v7.17.5 (7.17.5.1117)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/pdf-expert/Info.plist">📥 Download</a>
+
 ### Swiftchan | Kochan
 
 > v0.8.10 (1)
