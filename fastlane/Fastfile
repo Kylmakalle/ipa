@@ -7,7 +7,7 @@ require "digest"
 
 desc "Generate fresh mobileprovision"
 lane :gen_provision do
-  sigh(adhoc: true, force: true, username: ENV["APPSTORE_USERNAME"], provisioning_name: "Wildcard", app_identifier: "*", filename: "Wildcard.mobileprovision", output_path: "generator/")
+  sigh(adhoc: true, force: true, include_mac_in_profiles: true,  username: ENV["APPSTORE_USERNAME"], provisioning_name: "Wildcard", app_identifier: "*", filename: "Wildcard.mobileprovision", output_path: "generator/")
 end
 
 desc "Get ipa version, build, bundle id and name"
