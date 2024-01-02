@@ -75,6 +75,12 @@ uYou 3.0.1 | iSBlock | YTPlus
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/procreate/Info.plist">📥 Download</a>
 
+### Mobigram
+
+> v4.9.2 (70329)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/mobigram/Info.plist">📥 Download</a>
+
 ### PDFExpert
 
 > v7.17.5 (7.17.5.1117)
