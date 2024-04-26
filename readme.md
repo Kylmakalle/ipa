@@ -1,5 +1,11 @@
 # Signed IPAs
 
+### Anki
+
+> v23.12.1 (231201.1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/anki/Info.plist">📥 Download</a>
+
 ### vpn
 
 > v1.9.17 (221034)
