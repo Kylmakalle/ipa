@@ -14,7 +14,7 @@
 
 ### YouTube
 
-> v18.35.4 (18.35.4)
+> v19.35.3 (19.35.3)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📥 Download</a>
 
