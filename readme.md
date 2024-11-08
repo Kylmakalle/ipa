@@ -12,6 +12,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/anki/Info.plist">📥 Download</a>
 
+### iChan
+
+> v3.24.8291817 (5430)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
+
 ### YouTube
 
 > v19.35.3 (19.35.3)
