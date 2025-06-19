@@ -2,7 +2,7 @@
 
 ### Anki
 
-> v23.12.1 (231201.1)
+> v25.02.2 (250202.2)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/anki/Info.plist">📥 Download</a>
 
@@ -14,19 +14,19 @@
 
 ### GBox
 
-> v5.2.2 (522)
+> v5.7.3 (573)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/gbox/Info.plist">📥 Download</a>
 
 ### iChan
 
-> v3.24.8291817 (5430)
+> v3.32.8291817 (5531)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
 
 ### YouTube
 
-> v19.35.3 (19.35.3)
+> v20.12.4 (20.12.4)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📥 Download</a>
 
