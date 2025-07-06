@@ -15,11 +15,11 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>ru.domclick.mortgage</string>
+<string>com.wayhome</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Домклик</string>
+<string>Дневник-путешествий</string>
 </dict>
 </dict>
 </array>
