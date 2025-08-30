@@ -12,6 +12,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/avito/Info.plist">📥 Download</a>
 
+### DazzCamera
+
+> v2.9.14 (15)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
+
 ### Дневник-путешествий
 
 > v1.2.1 (1)
