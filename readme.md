@@ -1,12 +1,12 @@
 # Signed IPAs
 
-### Альфа-Банк
+### Альфа-Банк | А-банк
 
 > v1.4.2 (1)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/abank/Info.plist">📥 Download</a>
 
-### Вместе
+### Вместе | А-инвест
 
 > v3.0.0 (5267)
 
@@ -30,7 +30,7 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 
-### Дневник-путешествий
+### Дневник-путешествий | Домклик
 
 > v1.2.1 (1)
 
@@ -54,31 +54,31 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
 
-### Online
+### Online | Сбер
 
 > v16.0.1 (2)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sbank/Info.plist">📥 Download</a>
 
-### Investor
+### Investor | Сбер-инвест
 
 > v2.9.1 (1)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sinvest/Info.plist">📥 Download</a>
 
-### FreelanceCase
+### FreelanceCase | Т-Банк
 
 > v3.1 (1)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tbank/Info.plist">📥 Download</a>
 
-### KnightsMove
+### KnightsMove | Т-Инвест
 
 > v1.2 (5)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tinvest/Info.plist">📥 Download</a>
 
-### Sapphire
+### Sapphire | ВТБ
 
 > v5.6.2 (1)
 
