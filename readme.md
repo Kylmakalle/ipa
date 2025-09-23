@@ -1,5 +1,17 @@
 # Signed IPAs
 
+### Альфа-Банк
+
+> v1.4.2 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/abank/Info.plist">📥 Download</a>
+
+### Вместе
+
+> v3.0.0 (5267)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ainvest/Info.plist">📥 Download</a>
+
 ### Anki
 
 > v25.02.2 (250202.2)
@@ -41,6 +53,36 @@
 > v3.32.8291817 (5531)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
+
+### Online
+
+> v16.0.1 (2)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sbank/Info.plist">📥 Download</a>
+
+### Investor
+
+> v2.9.1 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sinvest/Info.plist">📥 Download</a>
+
+### FreelanceCase
+
+> v3.1 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tbank/Info.plist">📥 Download</a>
+
+### KnightsMove
+
+> v1.2 (5)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tinvest/Info.plist">📥 Download</a>
+
+### Sapphire
+
+> v5.6.2 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/vtb/Info.plist">📥 Download</a>
 
 ### YouTube
 
