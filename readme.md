@@ -54,6 +54,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
 
+### iTorrent
+
+> v2.0.15 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📥 Download</a>
+
 ### Online | Сбер
 
 > v16.0.1 (2)
