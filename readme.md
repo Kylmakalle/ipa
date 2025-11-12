@@ -92,7 +92,7 @@
 
 ### YouTube
 
-> v20.12.4 (20.12.4)
+> v20.42.3 (20.42.3)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📥 Download</a>
 
