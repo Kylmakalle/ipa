@@ -60,6 +60,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📥 Download</a>
 
+### LinkedIn
+
+> v2025.1001.1050 (9.31.5644)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linked/Info.plist">📥 Download</a>
+
 ### Online | Сбер
 
 > v16.0.1 (2)
