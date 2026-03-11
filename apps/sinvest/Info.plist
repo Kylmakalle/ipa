@@ -15,11 +15,11 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>ru.code4app.investor</string>
+<string>kz.petfolio</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Investor</string>
+<string>Petfolio</string>
 </dict>
 </dict>
 </array>

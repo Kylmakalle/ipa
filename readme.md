@@ -1,8 +1,8 @@
 # Signed IPAs
 
-### Альфа-Банк | А-банк
+### Kluch | А-банк
 
-> v1.4.2 (1)
+> v2.0.0 (2)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/abank/Info.plist">📥 Download</a>
 
@@ -30,51 +30,51 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 
-### Дневник-путешествий | Домклик
+### Cinepub | Домклик
 
-> v1.2.1 (1)
+> v2.23 (110)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/domclick/Info.plist">📥 Download</a>
 
-### ESign
-
-> v5.0.2 (1)
-
-<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/esign/Info.plist">📥 Download</a>
-
 ### GBox
 
-> v5.7.3 (573)
+> v6.0 (600)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/gbox/Info.plist">📥 Download</a>
 
 ### iChan
 
-> v3.32.8291817 (5531)
+> v3.38.8291817 (5554)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/ichan/Info.plist">📥 Download</a>
 
 ### iTorrent
 
-> v2.0.15 (1)
+> v2.1.0 (1)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📥 Download</a>
 
+### Cinepub
+
+> v2.23 (110)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/kinopub/Info.plist">📥 Download</a>
+
 ### LinkedIn
 
-> v2025.1001.1050 (9.31.5644)
+> v2025.1218.1232 (9.31.7228.4)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linked/Info.plist">📥 Download</a>
 
 ### Online | Сбер
 
-> v16.0.1 (2)
+> v17.0.0 (1)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sbank/Info.plist">📥 Download</a>
 
-### Investor | Сбер-инвест
+### Petfolio | Сбер-инвест
 
-> v2.9.1 (1)
+> v3.30.0 (85)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/sinvest/Info.plist">📥 Download</a>
 
@@ -90,6 +90,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tinvest/Info.plist">📥 Download</a>
 
+### TravelBoast
+
+> v2.27 (22889)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/travelboast/Info.plist">📥 Download</a>
+
 ### Sapphire | ВТБ
 
 > v5.6.2 (1)
@@ -98,7 +104,7 @@
 
 ### YouTube
 
-> v20.42.3 (20.42.3)
+> v21.09.2 (21.09.2)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/youtube/Info.plist">📥 Download</a>
 

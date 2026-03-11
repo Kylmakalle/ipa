@@ -15,11 +15,11 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>com.triptally.app</string>
+<string>com.kluchapp.prod</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Альфа-Банк</string>
+<string>Kluch</string>
 </dict>
 </dict>
 </array>

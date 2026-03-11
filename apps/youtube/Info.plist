@@ -15,7 +15,7 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>com.google.ios.youtube</string>
+<string>fi.akentech.vidosi</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
