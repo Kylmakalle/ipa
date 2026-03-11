@@ -15,11 +15,11 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>com.petrovich.cinepub</string>
+<string>com.travelboast.travelboast</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Cinepub</string>
+<string>TravelBoast</string>
 </dict>
 </dict>
 </array>

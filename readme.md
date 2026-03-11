@@ -30,9 +30,9 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 
-### Cinepub | Домклик
+### TravelBoast | Домклик
 
-> v2.23 (110)
+> v2.27 (22889)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/domclick/Info.plist">📥 Download</a>
 
@@ -54,7 +54,7 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/itorrent/Info.plist">📥 Download</a>
 
-### Cinepub
+### Cinepub | kino.pub
 
 > v2.23 (110)
 
