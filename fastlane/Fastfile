@@ -5,6 +5,41 @@ require "fileutils"
 require "tmpdir"
 require "digest"
 
+def ipa_info_from_path(ipa_path)
+  info_plist = FastlaneCore::IpaFileAnalyser.fetch_info_plist_file(ipa_path)
+
+  {
+    "version" => info_plist["CFBundleShortVersionString"],
+    "build" => info_plist["CFBundleVersion"],
+    "bundle_id" => info_plist["CFBundleIdentifier"],
+    "app_name" => info_plist["CFBundleName"]
+  }
+end
+
+def file_md5(path)
+  Digest::MD5.file(path).hexdigest
+end
+
+def release_md5s(release)
+  body = release&.dig("body").to_s
+  ipa_match_groups = /Original \.ipa MD5 ([a-f0-9]{32})/.match(body)
+  provision_match_groups = /Provision MD5 ([a-f0-9]{32})/.match(body)
+
+  {
+    "ipa" => ipa_match_groups&.[](1),
+    "provision" => provision_match_groups&.[](1)
+  }
+end
+
+def upload_required?(app, release)
+  return true if release.nil?
+
+  md5s = release_md5s(release)
+  return true if md5s["ipa"].nil? || md5s["provision"].nil?
+
+  md5s["ipa"] != app["original_ipa_md5"] || md5s["provision"] != app["provision_md5"]
+end
+
 desc "Generate fresh mobileprovision"
 lane :gen_provision do
   sigh(adhoc: true, force: true, include_mac_in_profiles: true,  username: ENV["APPSTORE_USERNAME"], provisioning_name: "Wildcard", app_identifier: "*", filename: "Wildcard.mobileprovision", output_path: "generator/")
@@ -12,12 +47,7 @@ end
 
 desc "Get ipa version, build, bundle id and name"
 lane :get_ipa_info do |options|
-  version = get_ipa_info_plist_value(key: "CFBundleShortVersionString", ipa: options[:ipa_path])
-  build = get_ipa_info_plist_value(key: "CFBundleVersion", ipa: options[:ipa_path])
-  bundle_id = get_ipa_info_plist_value(key: "CFBundleIdentifier", ipa: options[:ipa_path])
-  app_name = get_ipa_info_plist_value(key: "CFBundleName", ipa: options[:ipa_path])
-
-  result_dict = {"version" => version, "build" => build, "bundle_id" => bundle_id, "app_name" => app_name}
+  ipa_info_from_path(options[:ipa_path])
 end
 
 desc "Scan all the ipas in `ipas` folder"
@@ -29,7 +59,7 @@ lane :iterate_over_ipas do
     app_tag = File.basename(path) # got app tag
     ipa = Dir.glob("#{path}/*.ipa")[0] # scaning for ipa file
 
-    ipa_info = get_ipa_info(ipa_path: ipa) # get ipa file info
+    ipa_info = ipa_info_from_path(ipa) # get ipa file info
     ipa_info["tag"] = app_tag
     ipa_info["path"] = ipa
 
@@ -84,6 +114,20 @@ lane :resign_ipas do |options|
   end
 
   apps.each do |app|
+    app["original_ipa_md5"] = file_md5(app["path"])
+    app["provision_md5"] = file_md5("../generator/Wildcard.mobileprovision")
+
+    existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
+    unless upload_required?(app, existing_release)
+      UI.success "App [#{app['tag']}] '#{app['app_name']}' already exists with same ipa/provision md5, skipping resign"
+      next
+    end
+
+    existing_md5s = release_md5s(existing_release)
+    if !existing_release.nil? && existing_md5s["provision"] != app["provision_md5"]
+      UI.important "Provisioning profile has changed, reuploading App [#{app['tag']}] '#{app['app_name']}' ..."
+    end
+
     Dir.mktmpdir do |dir|
       # Copy ipa to temp dir
       FileUtils.cp(app["path"], dir)
@@ -103,14 +147,10 @@ lane :resign_ipas do |options|
 
       app["temp_path"] = temp_path
 
-      app["original_ipa_md5"] = Digest::MD5.hexdigest File.read app["path"]
-      app["provision_md5"] = Digest::MD5.hexdigest File.read "../generator/Wildcard.mobileprovision"
-      
-
       puts "Provision MD5 #{app['provision_md5']}"
       puts "Original .ipa MD5 #{app['original_ipa_md5']}"
       
-      upload_ipa(app: app)
+      upload_ipa(app: app, existing_release: existing_release)
     end
 
   end
@@ -119,34 +159,12 @@ end
 desc "Upload ipa to github release section"
 lane :upload_ipa do |options|
   app = options[:app]
+  existing_release = options[:existing_release]
+  if existing_release.nil?
+    existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
+  end
 
-  existing_release = get_github_release(url: ENV["REPO"], version: app["tag"])
-
-  unless existing_release.nil? 
-    ipa_md5_regexp = /Original .ipa MD5 ([a-f0-9]{32})/
-    provision_md5_regexp = /Provision MD5 ([a-f0-9]{32})/
-
-    ipa_match_groups = ipa_md5_regexp.match(existing_release['body'])
-    provision_match_groups = provision_md5_regexp.match(existing_release['body'])
-    
-    provision_md5_matches = false
-
-    # Check for md5 updates so we don't waste time
-    if !provision_match_groups.nil?
-      if app['provision_md5'] == provision_match_groups[1]
-        provision_md5_matches = true
-      else
-        UI.important "App '#{app['app_name']}' has new provisioning profile, reuploading..."
-      end       
-    end
-
-    if provision_md5_matches && !ipa_match_groups.nil?
-      if app['original_ipa_md5'] == ipa_match_groups[1]
-        UI.success "App '#{app['app_name']}' already exists with same md5"
-        next
-      end
-    end
-
+  unless existing_release.nil?
     # Delete existing release on GH
     response = github_api(
       server_url: "https://api.github.com",
@@ -235,4 +253,3 @@ lane :update do
     UI.error("Error commiting update. Probably nothing to commit 🤔")
   end 
 end
-
