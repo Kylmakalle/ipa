@@ -30,9 +30,19 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 
-### TravelBoast | Домклик
+### DLiPA
 
-> v2.27 (22889)
+> v1.2 (1)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dlipa/Info.plist">📥 Download</a>
+
+<details><summary>Description</summary>
+Скачивание ipa и старых версий приложений. Использовать на свой страх и риск!
+</details>
+
+### ДомСчастья | Домклик
+
+> v1.2 (2)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/domclick/Info.plist">📥 Download</a>
 
