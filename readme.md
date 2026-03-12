@@ -106,6 +106,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/travelboast/Info.plist">📥 Download</a>
 
+### TVRem
+
+> v1.0 (179)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/tvremote/Info.plist">📥 Download</a>
+
 ### Sapphire | ВТБ
 
 > v5.6.2 (1)
