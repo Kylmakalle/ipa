@@ -6,6 +6,12 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/abank/Info.plist">📥 Download</a>
 
+### Acrobat
+
+> v25.09.50 (20251003.170438)
+
+<a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/acrobat/Info.plist">📥 Download</a>
+
 ### Вместе | А-инвест
 
 > v3.0.0 (5267)
