@@ -24,15 +24,15 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/anki/Info.plist">📥 Download</a>
 
-### Avito
+### Anero
 
-> v200.5 (1747751986)
+> v230.1 (1786539266)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/avito/Info.plist">📥 Download</a>
 
 ### DazzCamera
 
-> v2.17.4 (17)
+> v2.17.7 (4)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 

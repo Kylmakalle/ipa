@@ -15,11 +15,11 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>ru.avito.app</string>
+<string>online.anero.app</string>
 <key>kind</key>
 <string>software</string>
 <key>title</key>
-<string>Avito</string>
+<string>Anero</string>
 </dict>
 </dict>
 </array>
