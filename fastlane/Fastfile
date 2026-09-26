@@ -4,6 +4,18 @@ require "json"
 require "fileutils"
 require "tmpdir"
 require "digest"
+require "openssl"
+
+def wildcard_provisioning_profile_path
+  File.expand_path("../generator/Wildcard.mobileprovision", __dir__)
+end
+
+def signing_identity_from_profile(path)
+  profile = FastlaneCore::ProvisioningProfile.parse(path)
+  certificate = OpenSSL::X509::Certificate.new(profile.fetch("DeveloperCertificates").first.string)
+  certificate.subject.to_a.find { |name, _value, _type| name == "CN" }&.[](1) ||
+    UI.user_error!("Could not determine the signing identity from #{path}")
+end
 
 def ipa_info_from_path(ipa_path)
   info_plist = FastlaneCore::IpaFileAnalyser.fetch_info_plist_file(ipa_path)
@@ -40,9 +52,31 @@ def upload_required?(app, release)
   md5s["ipa"] != app["original_ipa_md5"] || md5s["provision"] != app["provision_md5"]
 end
 
-desc "Generate fresh mobileprovision"
+desc "Create or refresh wildcard signing assets with match"
 lane :gen_provision do
-  sigh(adhoc: true, force: true, include_mac_in_profiles: true,  username: ENV["APPSTORE_USERNAME"], provisioning_name: "Wildcard", app_identifier: "*", filename: "Wildcard.mobileprovision", output_path: "generator/")
+  api_key = app_store_connect_api_key(
+    key_id: ENV["APP_STORE_CONNECT_KEY_ID"],
+    issuer_id: ENV["APP_STORE_CONNECT_ISSUER_ID"],
+    key_content: ENV["APP_STORE_CONNECT_KEY_CONTENT_BASE64"],
+    is_key_content_base64: true
+  )
+
+  match(
+    type: "adhoc",
+    app_identifier: "*",
+    profile_name: "match AdHoc wildcard",
+    git_url: ENV["MATCH_GIT_URL"],
+    api_key: api_key,
+    readonly: false,
+    force: true,
+    include_mac_in_profiles: true
+  )
+
+  match_profile_path = ENV["sigh_*_adhoc_profile-path"]
+  UI.user_error!("Match did not provide the wildcard Ad Hoc profile path") if match_profile_path.to_s.empty?
+
+  FileUtils.mkdir_p(File.dirname(wildcard_provisioning_profile_path))
+  FileUtils.cp(match_profile_path, wildcard_provisioning_profile_path)
 end
 
 desc "Get ipa version, build, bundle id and name"
@@ -115,7 +149,7 @@ lane :resign_ipas do |options|
 
   apps.each do |app|
     app["original_ipa_md5"] = file_md5(app["path"])
-    app["provision_md5"] = file_md5("../generator/Wildcard.mobileprovision")
+    app["provision_md5"] = file_md5(wildcard_provisioning_profile_path)
 
     existing_release = get_github_release(url: ENV["REPO"], version: app["tag"], api_token: ENV["GITHUB_TOKEN"])
     unless upload_required?(app, existing_release)
@@ -137,11 +171,10 @@ lane :resign_ipas do |options|
       temp_path = "#{dir}/app.ipa"
       File.rename(copied_file, temp_path)
       
-      # sh("cd .. && ./resign.sh \"#{temp_path}\" \"#{ENV['SIGNING_CERT']}\" \"#{ENV['PROVISION_PROFILE'] || 'generator/Wildcard.mobileprovision'}\" \"#{temp_path}\" \"null.null\" ")
       resign(
         ipa: temp_path,
-        signing_identity: ENV["SIGNING_CERT"],
-        provisioning_profile: "generator/Wildcard.mobileprovision",
+        signing_identity: signing_identity_from_profile(wildcard_provisioning_profile_path),
+        provisioning_profile: wildcard_provisioning_profile_path,
         # use_app_entitlements: true
       )
 

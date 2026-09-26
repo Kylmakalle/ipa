@@ -19,7 +19,7 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 [bundle exec] fastlane gen_provision
 ```
 
-Generate fresh mobileprovision
+Create or refresh wildcard signing assets with match
 
 ### get_ipa_info
 
