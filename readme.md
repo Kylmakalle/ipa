@@ -24,7 +24,7 @@
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/anki/Info.plist">📥 Download</a>
 
-### Anero
+### Anero | Avito | Anero
 
 > v230.1 (1786539266)
 
