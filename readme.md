@@ -78,7 +78,7 @@
 
 ### LinkedIn
 
-> v2025.1218.1232 (9.31.7228.4)
+> v2026.0625.1521 (9.32.2012)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/linked/Info.plist">📥 Download</a>
 
