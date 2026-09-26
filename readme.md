@@ -32,7 +32,7 @@
 
 ### DazzCamera
 
-> v2.9.14 (15)
+> v2.17.4 (17)
 
 <a href="itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/Kylmakalle/ipa/master/apps/dazz/Info.plist">📥 Download</a>
 
